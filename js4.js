@@ -6,11 +6,10 @@
 
 
 
-var FTEMP = parseInt(prompt("enter the temperature"));
-var CTEMP = Math.round((FTEMP - 32) * 5/9);
+do {
+    var FTEMP =   parseInt(prompt("enter the temperature"))
+    var CTEMP = Math.round((FTEMP - 32) * 5 / 9);
+} while (isNaN(FTEMP));
 
-while (isNaN(FTEMP)) {parseInt(prompt("enter the temperature"))};
 
-
-
-console.log(FTEMP +" Farenheit equals "+ CTEMP + " in Celsius");
+console.log(FTEMP + " Farenheit equals " + CTEMP + " in Celsius");
